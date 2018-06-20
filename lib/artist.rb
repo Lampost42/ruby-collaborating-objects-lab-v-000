@@ -20,4 +20,7 @@ class Artist
     artist = Artist.new(artist_name) if artist.nil?
     artist
   end
+  def print_songs(artist)
+    artist.songs
+  end
 end
