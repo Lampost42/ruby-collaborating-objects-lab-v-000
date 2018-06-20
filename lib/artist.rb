@@ -19,4 +19,5 @@ class Artist
     artist = self.all.detect{|artist| artist.name = artist_name}
     artist = Artist.new(artist_name) if artist.nil?
     artist
+  end
 end
