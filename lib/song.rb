@@ -1,3 +1,4 @@
+require 'pry'
 class Song 
   attr_accessor :artist, :name
   def initialize(name)
@@ -18,4 +19,5 @@ class Song
     song.artist.songs << song
     song
   end
+  binding.pry
 end
