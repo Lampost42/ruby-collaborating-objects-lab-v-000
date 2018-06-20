@@ -2,10 +2,13 @@ class Song
   attr_accessor :artist, :name
   def initialize(name)
     @name = name
+    @artist = nil
   end
   def artist_name=(artist_name)
     if self.artist.nil?
       self.artist = Artist.find_or_create_by_name(artist_name)
+    else
+      self.artist.name = artist_name
     end
   end
   def self.new_by_filename(filename)
