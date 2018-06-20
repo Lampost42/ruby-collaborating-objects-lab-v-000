@@ -1,4 +1,3 @@
-require 'pry'
 class MP3Importer
   attr_accessor :path
   def initialize(file_path)
@@ -9,5 +8,4 @@ class MP3Importer
     file_list = Dir.entries(self.path).select{|file| file.include?(".mp3")}
     file_list
   end
-    binding.pry
 end
