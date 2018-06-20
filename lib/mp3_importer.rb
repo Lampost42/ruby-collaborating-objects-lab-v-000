@@ -6,5 +6,6 @@ class MP3Importer
   
   def files
     file_list = Dir.entries(self.path)
+    file_list.each.deleteif
   end
 end
