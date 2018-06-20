@@ -6,6 +6,7 @@ class MP3Importer
   
   def files
     file_list = Dir.entries(self.path)
-    file_list.
+    file_list.each{|file| file.delete if file.include?(".mp3")}
+    file_list
   end
 end
