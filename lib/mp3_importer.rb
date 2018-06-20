@@ -5,4 +5,4 @@ class MP3Importer
   end
   
   def files
-    dir.entries
+    Dir.entries(self.file_path)
