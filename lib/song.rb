@@ -8,9 +8,4 @@ class Song
     song.name = filename.split(" - ")[1]
     song
   end
-  
-  def artist=(artist)
-    @artist = artist
-  end
-  
 end
