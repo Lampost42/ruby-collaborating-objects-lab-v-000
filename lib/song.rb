@@ -4,7 +4,10 @@ class Song
     @name = name
   end
   def artist_name=(artist_name)
-    @artist = self
+    if self.artist.nil?
+      self.artist = Artist.new(artist_name)
+    else
+      self.artist.name = artist_name
   def self.new_by_filename(filename)
     file = filename.split(" - ")
     name = file[1]
