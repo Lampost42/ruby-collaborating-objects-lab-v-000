@@ -6,7 +6,7 @@ class MP3Importer
   end
   
   def files
-    file_list = Dir.entries(self.path)
+    file_list = Dir.entries(self.path).collect{|file| file.include?(".mp3")}
   end
     binding.pry
 end
