@@ -6,7 +6,7 @@ class Artist
     @@all << self
     @songs = []
   end
-  def add_songs(new_song)
+  def add_song(new_song)
     self.songs << new_song unless self.songs.include?(new_song)
   end
 end
