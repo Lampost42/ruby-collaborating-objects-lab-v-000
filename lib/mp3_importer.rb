@@ -5,4 +5,6 @@ class MP3Importer
   end
   
   def files
-    Dir.entries(self.file_path)
+    file_list = Dir.entries(self.file_path)
+  end
+end
