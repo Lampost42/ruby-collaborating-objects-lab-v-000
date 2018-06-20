@@ -8,6 +8,6 @@ class Song
   end
   
   def artist=(name)
-    @artist = Artist.new(name)
+    @artist = Artist.new(name) if @artist.nil?
   
 end
