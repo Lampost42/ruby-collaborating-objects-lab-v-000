@@ -1,4 +1,6 @@
 require 'pry'
+require './lib/artist.rb'
+require './lib/song.rb'
 class MP3Importer
   attr_accessor :path
   def initialize(file_path)
