@@ -19,5 +19,4 @@ class Song
     song.artist.songs << song
     song
   end
-  binding.pry
 end
